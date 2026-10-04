@@ -32,10 +32,7 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-/* ===== Появление блоков при скролле =====
-   По умолчанию элемент чуть смещён вниз и прозрачен; когда он попадает
-   во вьюпорт, IntersectionObserver (см. index.html) добавляет
-   .is-visible и запускает плавный переход. */
+/*  Плавное появление блоков при скролле */
 .reveal {
   opacity: 0;
   transform: translateY(28px);
@@ -47,7 +44,7 @@ body {
   transform: translateY(0);
 }
 
-/* Списки и теги появляются по очереди, с небольшой задержкой между пунктами */
+/* Списки и теги */
 .reveal-stagger > * {
   opacity: 0;
   transform: translateY(18px);
@@ -267,7 +264,7 @@ h1, h2 {
   border-radius: 999px;
 }
 
-/* ===== 5. Почему mindbox ===== */
+/* ===== 5. Почему mindbox должен уделить время ===== */
 .mindbox {
   padding: 96px 0;
   background: radial-gradient(560px circle at 50% 0%, rgba(47, 93, 80, 0.08) 0%, transparent 60%), #1E1F24;
